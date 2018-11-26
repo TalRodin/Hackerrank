@@ -1,12 +1,6 @@
 def average(array):
-    # your code goes here 
-    total=0
-    l=list(set(array))   
-    sum_=sum(l)    
-    return(sum_/len(l))
-
-
-
+    # your code goes here
+    return(sum(set(array))/len(set(array)))
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))

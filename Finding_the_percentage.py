@@ -1,3 +1,5 @@
+def f(student_marks, query_name):
+    print(format((sum(student_marks[query_name])/len(student_marks[query_name])),'.2f'))
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
@@ -6,9 +8,4 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
-    count=0.0
-    for key in student_marks:
-        if key==query_name:
-            count=sum((student_marks[key]))
-            
-    print(format(count/3, '.2f'))
+    f(student_marks, query_name)

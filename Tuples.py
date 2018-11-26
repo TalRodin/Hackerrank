@@ -1,7 +1,5 @@
 if __name__ == '__main__':
-    tuple_= int(input())
-    #print(tuple_)
-    a = tuple(map(int, input().split(' ')))
-    #print(a)
-    print (hash(a))
+    n = int(input())
+    integer_list = map(int, input().split())
+    print (hash(tuple(integer_list)))
 

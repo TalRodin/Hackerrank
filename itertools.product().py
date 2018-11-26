@@ -1,6 +1,5 @@
 from itertools import product
-arr=map(int, input().split())
-arr2=map(int, input().split())
-list_=list(product(arr,arr2))
-for i in list_:
-    print(i, end=' ')
+a=map(int, input().split())
+b=map(int, input().split())
+for i in list(product(a,b)):
+    print(i,end=' ')

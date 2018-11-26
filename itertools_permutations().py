@@ -1,10 +1,4 @@
-#itertools.permutations()
 from itertools import permutations
-string_, num = input().split(' ')
-l=list(permutations(string_,int(num)))
-list_=[]
-for i in l:
-    list_.append(''.join(i))
-#print(sorted(list_))
-for i in sorted(list_):
-    print(i)
+n=input().split()
+for i in sorted(list(permutations(n[0],int(n[1])))):
+    print(''.join(i))
