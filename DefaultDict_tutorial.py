@@ -1,13 +1,9 @@
 from collections import defaultdict
 n,m=input().split(' ')
 d = defaultdict(list)
-list_=[]
-
 for i in range(int(n)):
     d[input()].append(i+1)  
- 
-for i in range(int(m)):
-    list_.append(input())
+list_=[input() for i in range(int(m))]
 
 for i in list_:
     if i in d:
